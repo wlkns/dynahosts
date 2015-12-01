@@ -1,0 +1,32 @@
+{
+  "name": "dynahosts",
+  "version": "1.0.0",
+  "description": "Updates the /etc/hosts file with the directories in the current folder",
+  "main": "dynahosts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "localhost",
+    "hosts",
+    "/etc/hosts",
+    "nginx",
+    "apache"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arkin-/dynahosts"
+  },
+  "author": {
+    "name": "Jak Wilkins",
+    "email": "jak.wilkins@gmail.com"
+  },
+  "bin": {
+    "dynahosts": "dynahosts.js"
+  },
+  "preferGlobal": true,
+  "license": "GPL",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
