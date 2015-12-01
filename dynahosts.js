@@ -19,7 +19,7 @@ RegExp.quote = function(str) {
 fs.readFile('/etc/hosts', 'utf8', function( err, data ) {
 	if ( err ) throw err;
 
-	var regex = new RegExp('# da:' + RegExp.quote(process.cwd()) + '([^#]+)# da\n', 'ig');
+	var regex = new RegExp('# da:' + RegExp.quote(program.dir) + '([^#]+)# da\n', 'ig');
 
 	fs.readdir(program.dir, function(err, files) {
 		if ( err ) throw err;
@@ -33,7 +33,7 @@ fs.readFile('/etc/hosts', 'utf8', function( err, data ) {
 
 		if ( hosts.length && ! program.remove )
 		{
-			da_entry += '# da:' + process.cwd() + '\n';
+			da_entry += '# da:' + program.dir + '\n';
 			da_entry += program.ip + ' ' + hosts.join(' ') + '\n';
 			da_entry += '# da\n';
 		}
