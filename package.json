@@ -1,6 +1,6 @@
 {
   "name": "dynahosts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Updates the /etc/hosts file with the directories in the current folder",
   "main": "dynahosts.js",
   "scripts": {
